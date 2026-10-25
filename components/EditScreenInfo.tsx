@@ -12,9 +12,10 @@ export const EditScreenInfo: React.FC<EditScreenInfoProps> = ({ path }) => {
   return (
     <View className={styles.container}>
       <View className={styles.getStartedContainer}>
+        {/* previously define titles and descriptions */}
         <Text className={styles.getStartedText}>{title}</Text>
         <View className={`${styles.codeHighlightContainer} ${styles.homeScreenFilename}`}>
-          <Text>{path}</Text>
+          <Text> Go to this file -- &gt;&gt;  {path}</Text>
         </View>
         <Text className={styles.getStartedText}>{description}</Text>
       </View>

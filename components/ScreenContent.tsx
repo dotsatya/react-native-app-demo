@@ -13,7 +13,8 @@ export const ScreenContent: React.FC<ScreenContentProps> = ({ title, path, child
   return (
     <View className={styles.container}>
       <Text className={styles.title}>{title}</Text>
-      <View className={styles.separator} />
+      <Text className={styles.title}> Demo App</Text>
+      <View className='h-[1px] my-7 w-4/5 bg-gray-200' />
       <EditScreenInfo path={path} />
       {children}
     </View>
