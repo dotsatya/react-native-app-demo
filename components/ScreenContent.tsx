@@ -12,8 +12,9 @@ interface ScreenContentProps {
 export const ScreenContent: React.FC<ScreenContentProps> = ({ title, path, children }) => {
   return (
     <View className={styles.container}>
-      <Text className={styles.title}>{title}</Text>
-      <Text className={styles.title}> Demo App</Text>
+      <Text className={styles.title}>{title} Demo App</Text>
+      <Text className={styles.title}>:: app_name ::</Text>
+      <Text className={styles.title}> Change it globally to change the App and Project name!</Text>
       <View className='h-[1px] my-7 w-4/5 bg-gray-200' />
       <EditScreenInfo path={path} />
       {children}
